@@ -1,0 +1,138 @@
+body {
+  background-color: #111111;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.logo {
+  width: 20%;
+  height: 100%;
+  background-image: url(/resources/images/GA-logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: #000;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: wrap;
+  width: 100%;
+  height: 10vh;
+  background-color: #000;
+  font-size: 1.2em;
+}
+.header a {
+  text-decoration: none;
+}
+.header a:visited {
+  color: #fff;
+}
+.header a:hover {
+  color: #ff9000;
+}
+
+.introContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/resources/images/topp_gym_1920x800.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-flow: column;
+  width: 100%;
+  height: 60vh;
+}
+.introContainer p {
+  padding: 0vw;
+  width: 50%;
+}
+.introContainer button {
+  background-color: #ff9000;
+  font-size: normal;
+  color: #e1e1e1;
+  font-weight: bold;
+  text-align: center;
+  width: 20vw;
+  height: 45px;
+  border-radius: 20px;
+  box-shadow: #fff 0px 0px 10px;
+}
+.introContainer button:active {
+  transform: translateY(4px);
+}
+.introContainer button:hover {
+  color: #fff;
+  background-color: #834E09;
+}
+
+.callToAction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  width: 60%;
+}
+
+.btn1 {
+  font-size: 1em;
+}
+
+button {
+  background-color: transparent;
+  border: transparent;
+  color: #fff;
+}
+
+button:hover {
+  color: #ff9000;
+  cursor: pointer;
+}
+
+.introContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 30vh;
+  text-align: center;
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap column;
+  justify-content: space-around;
+  width: 100vw;
+  height: 100vh;
+  margin-bottom: 10vh;
+}
+
+#cards {
+  width: 22vw;
+  height: 45vh;
+  background-color: #e1e1e1;
+  color: #000;
+}
+
+.note {
+  font-size: 12px;
+  color: #000;
+}
+
+.footer {
+  width: 100vw;
+  height: 20vh;
+  background-color: #030303;
+}
+
+/*# sourceMappingURL=style.css.map */
