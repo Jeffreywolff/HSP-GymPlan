@@ -4,12 +4,13 @@
 
 
 body{
-    background-color: #111111;
+    background-color: #000;
     color: #fff;
-    margin: 0;
+    margin: none;
     padding: 0;
     border: 0;
 }
+
 
 .logo{
     width: 20%;
@@ -47,11 +48,14 @@ body{
 .introContainer{
     @include flexProp(center, center);
     @include singleImgProp($introImage, no-repeat, cover);
+    
     flex-flow: column;
     width: 100%;
+    height: 40vw;
+    
    
     p{
-        padding: 0vw;
+        
         width: 50%;
         
     }
@@ -100,29 +104,26 @@ button:hover{
 }
 
 
-.introContainer{
-    @include flexProp(center, center);
-    flex-direction: column;
-    width: 100vw;
-    height: 30vh;
-    text-align: center;
-}
-
 .cardContainer{
     @include flexProp(center, center);
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     justify-content: space-around;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     margin-top: 10vh;
     margin-bottom: 10vh;
+    
+    background-image: linear-gradient(180deg, #000, #1F2122); 
+    
 }
 
-#cards{
+.cards{
+    visibility: hidden;
     width: 22vw;
     height: 45vh;
     background-color: #e1e1e1;
     color: #000;
+    box-shadow: 0 0 30px grey;
     
 
     h3,p{
@@ -133,6 +134,11 @@ button:hover{
     ul{
         margin-left: -10px;
     }
+    
+}
+
+.cards:hover{
+    transform: scale(1.15, 1.15);
     
 }
 
@@ -152,7 +158,7 @@ button:hover{
 
 
 .footer{
-    width: 100vw;
+    width: 100%;
     height: 20vh;
     background-color: #030303;
 }

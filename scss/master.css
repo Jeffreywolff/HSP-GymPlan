@@ -1,0 +1,196 @@
+body {
+  background-color: #000;
+  color: #fff;
+  margin: none;
+  padding: 0;
+  border: 0;
+}
+
+.logo {
+  width: 20%;
+  height: 100%;
+  background-image: url(/resources/images/GA-logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: #000;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  width: 100%;
+  height: 10vh;
+  background-color: #000;
+  font-size: 1.2em;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.header a:visited {
+  color: #fff;
+}
+
+.header a:hover {
+  color: #ff9000;
+}
+
+.introContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(/resources/images/topp_gym_1920x800.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  width: 100%;
+  height: 40vw;
+}
+
+.introContainer p {
+  width: 50%;
+}
+
+.introContainer button {
+  background-color: #ff9000;
+  font-size: normal;
+  color: #e1e1e1;
+  font-weight: bold;
+  text-align: center;
+  width: 20vw;
+  height: 5vh;
+  border-radius: 20px;
+  -webkit-box-shadow: #fff 0px 0px 10px;
+          box-shadow: #fff 0px 0px 10px;
+}
+
+.introContainer button:active {
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+}
+
+.introContainer button:hover {
+  color: #fff;
+  background-color: #834E09;
+}
+
+.callToAction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 60%;
+}
+
+.btn1 {
+  font-size: 1em;
+}
+
+button {
+  background-color: transparent;
+  border: transparent;
+  color: #fff;
+}
+
+button:hover {
+  color: #ff9000;
+  cursor: pointer;
+}
+
+.cardContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  height: 100vh;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#000), to(#1F2122));
+  background-image: linear-gradient(180deg, #000, #1F2122);
+}
+
+.cards {
+  visibility: hidden;
+  width: 22vw;
+  height: 45vh;
+  background-color: #e1e1e1;
+  color: #000;
+  -webkit-box-shadow: 0 0 30px grey;
+          box-shadow: 0 0 30px grey;
+}
+
+.cards h3, .cards p {
+  width: auto;
+  height: auto;
+  margin: 10px;
+}
+
+.cards ul {
+  margin-left: -10px;
+}
+
+.cards:hover {
+  -webkit-transform: scale(1.15, 1.15);
+          transform: scale(1.15, 1.15);
+}
+
+.cardImg {
+  width: 100%;
+  height: 35%;
+  background-color: grey;
+}
+
+.note {
+  font-size: 12px;
+  color: #000;
+}
+
+.footer {
+  width: 100%;
+  height: 20vh;
+  background-color: #030303;
+}
+/*# sourceMappingURL=master.css.map */
