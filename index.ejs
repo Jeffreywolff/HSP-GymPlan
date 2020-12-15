@@ -37,12 +37,13 @@
             <h1>Got no idea what exercises to do?</h1>
             <p>With just the simple touch of a button, a daily plan with different exercises will be generated to fit your needs in terms of training.</p>
 
-            <button onclick="showPlanOnClick()">Generate new plan</button>
+            <button onclick="showPlanOnClick">Generate new plan</button>
         </div>
 
         <div class="cardContainer">
 
-            <div class="cards"><div class="cardImg"></div>
+            <% for( let i = 0; i < 6; i++ ) { %>
+                <div class="cards"><div class="cardImg"></div>
                 <h3>Name of Exercise</h3>
                 <hr>
                 <ul>
@@ -52,6 +53,9 @@
                 </ul>
                 <p class="note">* Note that it is just a suggestions of reps and sets. More information can be found at the References page.</p>
             </div>
+            <% } %>
+
+            
 
             <div class="cards"><div class="cardImg"></div>
                 <h3>Name of Exercise</h3>
