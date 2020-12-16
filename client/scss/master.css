@@ -76,7 +76,7 @@ body {
 }
 
 .introContainer button {
-  background-color: #ff9000;
+  background-color: #df7e00;
   font-size: normal;
   color: #e1e1e1;
   font-weight: bold;
@@ -84,8 +84,8 @@ body {
   width: 20vw;
   height: 5vh;
   border-radius: 20px;
-  -webkit-box-shadow: #fff 0px 0px 10px;
-          box-shadow: #fff 0px 0px 10px;
+  -webkit-box-shadow: #a7a7a7 0px 0px 10px;
+          box-shadow: #a7a7a7 0px 0px 10px;
 }
 
 .introContainer button:active {
@@ -173,8 +173,8 @@ button:hover {
 }
 
 .cards:hover {
-  -webkit-transform: scale(1.15, 1.15);
-          transform: scale(1.15, 1.15);
+  -webkit-transform: scale(1.05, 1.05);
+          transform: scale(1.05, 1.05);
 }
 
 .cardImg {
