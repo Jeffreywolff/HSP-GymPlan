@@ -9,21 +9,29 @@ const ExerciseSchema = new mongoose.Schema({
     enduranceReps: Number,
   });
 
-  const Message = mongoose.model('Message', MessageSchema);
+  const Exercise = mongoose.model('Exercise', ExerciseSchema);
 
 
-exports.newMessage = (fname,email) =>{
+exports.newExercise = (name, strenghtSets, strenghtReps, 
+  growthSets, growthReps, enduranceSets, enduranceReps) =>{
 
-    var message = new Message({
-      fname: fname,
-      email: email
+    var exercise = new Exercise({
+      exerciseName: name,
+      strenghtSets: strenghtSets,
+      strenghtReps: strenghtReps,
+      growthSets: growthSets,
+      growthReps: growthReps,
+      enduranceSets: enduranceSets,
+      enduranceReps: enduranceReps
 
     });
 
-    return message;
+    return exercise;
 }
 
-exports.messageFind = async () =>{
-  let foundMessage = await Message.find({});
-  return foundMessage;
+
+
+exports.foundExercise = async () =>{
+  let foundExercise = await Exercise.find({});
+  return foundExercise;
 }

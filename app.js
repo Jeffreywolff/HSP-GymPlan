@@ -1,4 +1,6 @@
 const express = require('express');
+const _exerciseModel = require('./ExerciseModel');
+const dBModule = require('./dBModule');
 const app = express();
 const port = 3000;
 
@@ -19,4 +21,4 @@ app.use(express.urlencoded());
 
 app.get('/',(reg, res) => res.render('pages/index.ejs', {}));
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+app.listen(port, () => console.log(`\x1b[36m \n \nServer ip: http://localhost:${port} `));
