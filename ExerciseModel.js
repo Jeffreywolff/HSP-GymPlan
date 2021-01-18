@@ -32,6 +32,6 @@ exports.newExercise = (name, strenghtSets, strenghtReps,
 
 
 exports.foundExercise = async () =>{
-  let foundExercise = await Exercise.find({});
+  const foundExercise = await Exercise.find({});
   return foundExercise;
 }
