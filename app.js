@@ -18,8 +18,9 @@ app.use(express.urlencoded());
 
 app.post('/postexercise', async (req, res) => {
 
-    const exercise = _exerciseModel.newExercise(req.body.exerciseName, req.body.strenghtSets, req.body.strenghtReps,
-      req.body.growthSets, req.body.growthReps, req.body.enduranceSets, req.body.enduranceReps);
+    let exercise = _exerciseModel.newExercise(req.body.exerciseName, req.body.strenghtSets, req.body.strenghtReps,
+      req.body.growthSets, req.body.growthReps, req.body.enduranceSets, req.body.enduranceReps, req.body.difficulty);
+
     await dBModule.store(exercise);
     res.render('pages/forms.ejs');
   })

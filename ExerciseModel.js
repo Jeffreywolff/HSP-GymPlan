@@ -7,13 +7,15 @@ const ExerciseSchema = new mongoose.Schema({
     growthReps: Number,
     enduranceSets: Number,
     enduranceReps: Number,
+    difficulty: Number,
+
   });
 
   const Exercise = mongoose.model('Exercise', ExerciseSchema);
 
 
 exports.newExercise = (name, strenghtSets, strenghtReps, 
-  growthSets, growthReps, enduranceSets, enduranceReps) =>{
+  growthSets, growthReps, enduranceSets, enduranceReps, difficulty) =>{
 
     var exercise = new Exercise({
       exerciseName: name,
@@ -22,8 +24,8 @@ exports.newExercise = (name, strenghtSets, strenghtReps,
       growthSets: growthSets,
       growthReps: growthReps,
       enduranceSets: enduranceSets,
-      enduranceReps: enduranceReps
-
+      enduranceReps: enduranceReps,
+      difficulty: difficulty,
     });
 
     return exercise;
