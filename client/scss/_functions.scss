@@ -18,9 +18,9 @@
 }
 
 // Sets the background image of an element and if it wants to repeat.
-@mixin singleImgProp($image, $repeat, $size) {
+@mixin ImgProp($image, $position, $repeat, $size) {
     background-image: $image;
-    background-position: center;
+    background-position: $position;
     background-size: $size;
     background-repeat: $repeat;
 }

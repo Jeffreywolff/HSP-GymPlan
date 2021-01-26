@@ -1,104 +1,24 @@
 body {
-  background-color: #000;
-  color: #fff;
+  background-color: #F0F2EF;
+  color: #000;
   margin: none;
   padding: 0;
   border: 0;
 }
 
 .logo {
-  width: 20%;
-  height: 100%;
+  width: 10%;
   background-image: url(/resources/images/GA-logo.png);
+  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-size: contain;
-  color: #000;
 }
 
 .logo:hover {
   cursor: pointer;
 }
 
-.header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-flow: wrap;
-      flex-flow: wrap;
-  width: 100%;
-  height: 10vh;
-  background-color: #000;
-  font-size: 1.2em;
-}
-
-.header a {
-  text-decoration: none;
-}
-
-.header a:visited {
-  color: #fff;
-}
-
-.header a:hover {
-  color: #ff9000;
-}
-
-.introContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-image: url(/resources/images/topp_gym_1920x800.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  width: 100%;
-  height: 40vw;
-}
-
-.introContainer p {
-  width: 50%;
-}
-
-.introContainer button {
-  background-color: #df7e00;
-  font-size: normal;
-  color: #e1e1e1;
-  font-weight: bold;
-  text-align: center;
-  width: 20vw;
-  height: 5vh;
-  border-radius: 20px;
-  -webkit-box-shadow: #a7a7a7 0px 0px 10px;
-          box-shadow: #a7a7a7 0px 0px 10px;
-}
-
-.introContainer button:active {
-  -webkit-transform: translateY(4px);
-          transform: translateY(4px);
-}
-
-.introContainer button:hover {
-  color: #fff;
-  background-color: #834E09;
-}
-
-.callToAction {
+#header #header-body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -113,19 +33,147 @@ body {
   width: 60%;
 }
 
-.btn1 {
-  font-size: 1em;
+#header #header-body .nav-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
 }
 
-button {
-  background-color: transparent;
-  border: transparent;
+#header a {
+  text-decoration: none;
+  color: #000;
+}
+
+#header a:visited {
+  color: #000;
+}
+
+#header a:hover {
+  color: #28AFB0;
+}
+
+#carousel-slides {
+  width: 100vw;
+}
+
+#carousel-slides #carousel-cover {
+  width: inherit;
+  height: 60vh;
+  background-color: #202020;
+  opacity: 0.4;
+  z-index: 2;
+  position: absolute;
+}
+
+#carousel-slides #intro-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 3;
+  width: inherit;
+  height: 60vh;
+  position: absolute;
+}
+
+#carousel-slides #introCard {
+  color: #000;
+}
+
+#carousel-slides #introCard #introCard-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  background-color: #F0F2EF;
+}
+
+#carousel-slides #introCard #icon-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#carousel-slides #generatorBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #df7e00;
+  font-size: normal;
+  color: #e1e1e1;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  border-radius: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#carousel-slides #generatorBtn:active {
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+}
+
+#carousel-slides #generatorBtn:hover {
   color: #fff;
+  background-color: #881600;
 }
 
-button:hover {
-  color: #ff9000;
-  cursor: pointer;
+#carousel-slides #carousel-body {
+  width: 100vw;
+}
+
+#carousel-slides #carousel-img {
+  height: 60vh;
+  background-image: url(/resources/images/Legend_Fitness_HappyMembers.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#carousel-slides #carousel-img2 {
+  height: 60vh;
+  background-image: url(/resources/images/MintGym.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#carousel-slides #carousel-img3 {
+  height: 60vh;
+  background-image: url(/resources/images/WomanInGym.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .cardContainer {
@@ -148,49 +196,32 @@ button:hover {
   height: 100vh;
   margin-top: 10vh;
   margin-bottom: 10vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#000), to(#1F2122));
-  background-image: linear-gradient(180deg, #000, #1F2122);
+  background-color: #F0F2EF;
 }
 
-.cards {
-  visibility: hidden;
-  width: 22vw;
-  height: 45vh;
-  background-color: #e1e1e1;
-  color: #000;
-  -webkit-box-shadow: 0 0 30px grey;
-          box-shadow: 0 0 30px grey;
+.cards-body {
+  height: auto;
+  -webkit-box-shadow: 0 0 5px grey;
+          box-shadow: 0 0 5px grey;
 }
 
-.cards h3, .cards p {
+.cards-body h3, .cards-body p {
   width: auto;
   height: auto;
   margin: 10px;
 }
 
-.cards ul {
+.cards-body ul {
   margin-left: -10px;
-}
-
-.cards:hover {
-  -webkit-transform: scale(1.05, 1.05);
-          transform: scale(1.05, 1.05);
-}
-
-.cardImg {
-  width: 100%;
-  height: 35%;
-  background-color: grey;
 }
 
 .note {
   font-size: 12px;
-  color: #000;
 }
 
 .footer {
   width: 100%;
   height: 20vh;
-  background-color: #030303;
+  background-color: #28AFB0;
 }
 /*# sourceMappingURL=master.css.map */

@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const ExerciseSchema = new mongoose.Schema({
+    area: String,
     exerciseName: String,
     strenghtSets: Number,
     strenghtReps: Number,
@@ -14,10 +15,11 @@ const ExerciseSchema = new mongoose.Schema({
   const Exercise = mongoose.model('Exercise', ExerciseSchema);
 
 
-exports.newExercise = (name, strenghtSets, strenghtReps, 
+exports.newExercise = (area, name, strenghtSets, strenghtReps, 
   growthSets, growthReps, enduranceSets, enduranceReps, difficulty) =>{
 
     var exercise = new Exercise({
+      area: area,
       exerciseName: name,
       strenghtSets: strenghtSets,
       strenghtReps: strenghtReps,

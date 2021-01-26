@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="/scss/master.css">
 
     <script>
-        function showPlanOnClick() {
+        function showPlan() {
             var item = document.getElementsByClassName("cards");
             var amount = document.getElementsByClassName("cards").length;
             for (let i = 0; i <= amount; i++) {
@@ -38,44 +38,113 @@
 
 <body>
 
-    <div class="header">
-        <div class="logo"></div>
 
-        <div class="callToAction">
-            <button class="btn1">Todays Plan</button>
-            <a href="">References</a>
+    <nav id="header" class="navbar navbar-expand-lg navbar-light bg-light">
+        <div id="header-body" class="container-fluid">
+            <a class="logo navbar-brand" href="#">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"><b>New Plan</b></a>
+                        <a class="nav-link active" aria-current="page" href="#"><b>References</b></a>
+                    </li>
+            </div>
+        </div>
+    </nav>
+
+
+    <div id="carousel-slides" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div id="carousel-cover">
+            
+        </div>
+        <div id="intro-container">
+            <div id="introCard" class="card" style="width: 18rem;">
+                <div id="introCard-body" class="card-body">
+                    <h5 class="card-title">Got no idea what exercises to do?</h5>
+                    <div id="icon-container">
+                        <svg class="bd-placeholder-img rounded-circle" width="40" height="40"
+                            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Biceps</title>
+                            <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
+                                dy=".3em"></text>
+                        </svg>
+                        <svg class="bd-placeholder-img rounded-circle" width="40" height="40"
+                            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Back</title>
+                            <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
+                                dy=".3em"></text>
+                        </svg>
+                        <svg class="bd-placeholder-img rounded-circle" width="40" height="40"
+                            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Front</title>
+                            <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
+                                dy=".3em"></text>
+                        </svg>
+                        <svg class="bd-placeholder-img rounded-circle" width="40" height="40"
+                            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Legs</title>
+                            <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
+                                dy=".3em"></text>
+                        </svg>
+                    </div>
+                    <br>
+                    <p class="card-text">With just the simple touch of a button, a daily plan with different exercises
+                        will
+                        be generated to fit your
+                        needs in terms of training.</p><br>
+                    <a href="/getexercises" id="generatorBtn" class="btn btn-info" role="button">Generate Plan</a>
+                </div>
+            </div>
         </div>
 
+        <div id="carousel-body" class="carousel-inner">
+            <div class="carousel-item active">
+                <div id="carousel-img" class="d-block w-100"></div>
+            </div>
+            <div class="carousel-item">
+                <div id="carousel-img2" class="d-block w-100"></div>
+            </div>
+            <div class="carousel-item">
+                <div id="carousel-img3" class="d-block w-100"></div>
+            </div>
+        </div>
     </div>
 
-    <div class="introContainer">
-        <h1>Got no idea what exercises to do?</h1>
-        <p>With just the simple touch of a button, a daily plan with different exercises will be generated to fit your
-            needs in terms of training.</p>
 
-        <button onclick="showPlanOnClick()">Generate new plan</button>
-    </div>
-
+    <!-- Cards -->
     <div class="cardContainer">
 
-        <% for( let index = 0; index < 7; index++ ) { %>
-        <div class="cards">
-            <div class="cardImg"></div>
-            <h3>latsdrag </h3>
-            <hr>
-            <ul>
-                <li>Strenght: 3 sets; Y amount of repetitions</li>
-                <li>Growth: X sets; Y amount of repetitions</li>
-                <li>Endurance: X sets; Y amount of repetitions</li>
-            </ul>
-            <p class="note">* Note that it is just a suggestions of reps and sets. More information can be found at the
-                References page.</p>
+        <% for( let i = 0; i < exercises.length; i++ ) { %>
+        <div class="cards-body card" style="width: 18rem;">
+            <div class="card-body">
+                <h3 class="card-title"><%= exercises[i].exerciseName %></h3>
+                <h6 class="card-subtitle mb-2 text-muted"> <%= exercises[i].area %></h6>
+                <hr>
+                <ul>
+                    <li><b>Strenght:</b> <%= exercises[i].strenghtSets %> sets; <%= exercises[i].strenghtReps %> amount
+                        of
+                        repetitions</li>
+                    <li><b>Growth:</b> <%= exercises[i].growthSets %> sets; <%= exercises[i].growthReps %> amount of
+                        repetitions
+                    </li>
+                    <li><b>Endurance:</b> <%= exercises[i].enduranceSets %> sets; <%= exercises[i].enduranceReps %>
+                        amount of
+                        repetitions</li>
+                </ul>
+                <p class="note card-subtitle mb-2 text-muted">* Note that it is just a suggestions of reps and sets.
+                    More information can be found at the
+                    References page.</p>
+            </div>
         </div>
-
         <% } %>
 
     </div>
-
+    <!-- Cards ending -->
     <div class="footer">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius est, sequi voluptate sed, amet quas
         ratione at culpa esse suscipit illum sint eum veritatis incidunt. Accusamus dolores ea quaerat laborum.

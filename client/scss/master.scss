@@ -4,8 +4,8 @@
 
 
 body{
-    background-color: #000;
-    color: #fff;
+    background-color: #F0F2EF;
+    color: #000;
     margin: none;
     padding: 0;
     border: 0;
@@ -13,95 +13,130 @@ body{
 
 
 .logo{
-    width: 20%;
-    height: 100%;
-    background-image: url(/resources/images/GA-logo.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    color: #000;
+    width: 10%;
+    
+    @include ImgProp(url(/resources/images/GA-logo.png), center, no-repeat, cover)
 }
 .logo:hover{
     cursor: pointer; 
  }
 
-.header{
-    @include flexProp(flex-start, center);
-    flex-flow: wrap;
-    width: 100%;
-    height: 10vh;
-    background-color: #000;
-    font-size: 1.2em;
+#header{
+   
+    #header-body{
+        @include flexProp(center, center);
+        justify-content: space-around;
+        width: 60%;
+            .nav-item{
+                display: flex;
+                flex-flow: row;
+            }
+    }
 
     a{
         text-decoration: none;
+        color: #000;
     }
 
     a:visited{
-        color: #fff;
+        color: #000;
     }
 
     a:hover{
-        color: #ff9000;
+        color: #28AFB0;
     }
 }
 
-.introContainer{
-    @include flexProp(center, center);
-    @include singleImgProp($introImage, no-repeat, cover);
+
+#carousel-slides{
+    width: 100vw;
     
-    flex-flow: column;
-    width: 100%;
-    height: 40vw;
-    
-   
-    p{
+
+    #carousel-cover{
+        width: inherit;
+        height: 60vh;
+        background-color: rgb(32, 32, 32);
+        opacity: 0.4;
+        z-index: 2;
+        position: absolute;
         
-        width: 50%;
+        
         
     }
 
-    button{
+    #intro-container{
+        @include flexProp(center, center);
+        z-index: 3;
+        width: inherit;
+        height: 60vh;
+        position: absolute;
+    }
+
+    #introCard{
+        
+        
+        
+        color: #000;
+        #introCard-body{
+            @include flexProp(center, center);
+            flex-flow: column;
+            background-color: #F0F2EF;
+        }
+
+        #icon-container{
+            display: flex;
+            flex-flow: row;
+            justify-content: space-between;
+        }
+
+    }
+
+
+    #generatorBtn{
+        display: flex;
         background-color: #df7e00;
         @include textProp(normal, #e1e1e1, bold, center);
-        width: 20vw;
-        height: 5vh;
+        border: none;
         border-radius: 20px;
-        box-shadow: rgb(167, 167, 167) 0px 0px 10px;
+        justify-content: center;
+        align-items: center;
     }
-    button:active{
+
+    #generatorBtn:active{
         transform: translateY(4px);
     }
 
-    button:hover{
+    #generatorBtn:hover{
         color: #fff;
-        background-color: #834E09;
+        background-color: #881600;
+    }
+    
+    #carousel-body{
+        width: 100vw;
+        
     }
 
-    
+    #carousel-img{
+        
+        height: 60vh;
+        background-image: url(/resources/images/Legend_Fitness_HappyMembers.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+    }
+
+    #carousel-img2{
+        height: 60vh;
+        @include ImgProp(url(/resources/images/MintGym.jpg), center, no-repeat, cover);
+    }
+    #carousel-img3{
+        height: 60vh;
+        @include ImgProp(url(/resources/images/WomanInGym.jpg), center, no-repeat, cover);
+    }
 }
 
 
-.callToAction{
-    @include flexProp(center, center);
-    justify-content: space-around;
-    width: 60%;
-    
-}
-
-.btn1{
-    font-size: 1em;
-}
-
-button{
-    background-color: transparent;
-    border: transparent;
-    color: #fff;
-}
-
-button:hover{
-    color: #ff9000;
-    cursor: pointer;
-}
 
 
 .cardContainer{
@@ -112,18 +147,13 @@ button:hover{
     height: 100vh;
     margin-top: 10vh;
     margin-bottom: 10vh;
-    
-    background-image: linear-gradient(180deg, #000, #1F2122); 
+    background-color: #F0F2EF;
     
 }
 
-.cards{
-    visibility: hidden;
-    width: 22vw;
-    height: 45vh;
-    background-color: #e1e1e1;
-    color: #000;
-    box-shadow: 0 0 30px grey;
+.cards-body{
+    height: auto;
+    box-shadow: 0 0 5px grey;
     
 
     h3,p{
@@ -137,20 +167,10 @@ button:hover{
     
 }
 
-.cards:hover{
-    transform: scale(1.05, 1.05);
-    
-}
 
-.cardImg{
-    width: 100%;
-    height: 35%;
-    background-color: grey;
-}
 
 .note{
     font-size: 12px;
-    color: #000;
 }
 
 
@@ -160,5 +180,5 @@ button:hover{
 .footer{
     width: 100%;
     height: 20vh;
-    background-color: #030303;
+    background-color: #28AFB0;
 }
