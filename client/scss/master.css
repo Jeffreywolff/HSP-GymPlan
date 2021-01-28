@@ -6,54 +6,13 @@ body {
   border: 0;
 }
 
-.logo {
-  width: 10%;
-  background-image: url(/resources/images/GA-logo.png);
+#logo {
+  width: 110px;
+  height: 70px;
+  background-image: url(/resources/images/GYA-Logo_White1.png);
+  background-size: contain;
   background-position: center;
-  background-size: cover;
   background-repeat: no-repeat;
-}
-
-.logo:hover {
-  cursor: pointer;
-}
-
-#header #header-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 60%;
-}
-
-#header #header-body .nav-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row;
-          flex-flow: row;
-}
-
-#header a {
-  text-decoration: none;
-  color: #000;
-}
-
-#header a:visited {
-  color: #000;
-}
-
-#header a:hover {
-  color: #28AFB0;
 }
 
 #carousel-slides {
@@ -62,7 +21,7 @@ body {
 
 #carousel-slides #carousel-cover {
   width: inherit;
-  height: 60vh;
+  height: 70vh;
   background-color: #202020;
   opacity: 0.4;
   z-index: 2;
@@ -153,7 +112,7 @@ body {
 }
 
 #carousel-slides #carousel-img {
-  height: 60vh;
+  height: 70vh;
   background-image: url(/resources/images/Legend_Fitness_HappyMembers.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -161,42 +120,19 @@ body {
 }
 
 #carousel-slides #carousel-img2 {
-  height: 60vh;
-  background-image: url(/resources/images/MintGym.jpg);
+  height: 70vh;
+  background-image: url(/resources/images/Militarypressgirl1.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 #carousel-slides #carousel-img3 {
-  height: 60vh;
-  background-image: url(/resources/images/WomanInGym.jpg);
+  height: 70vh;
+  background-image: url(/resources/images/Squatgirl.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-.cardContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 100%;
-  height: 100vh;
-  margin-top: 10vh;
-  margin-bottom: 10vh;
-  background-color: #F0F2EF;
 }
 
 .cards-body {
@@ -205,7 +141,11 @@ body {
           box-shadow: 0 0 5px grey;
 }
 
-.cards-body h3, .cards-body p {
+.cards-body h3 {
+  font-size: 110%;
+}
+
+.cards-body p {
   width: auto;
   height: auto;
   margin: 10px;
@@ -217,11 +157,5 @@ body {
 
 .note {
   font-size: 12px;
-}
-
-.footer {
-  width: 100%;
-  height: 20vh;
-  background-color: #28AFB0;
 }
 /*# sourceMappingURL=master.css.map */

@@ -27,7 +27,7 @@ app.post('/postexercise', async (req, res) => {
 
 app.get('/getexercises', async (reg, res) => {
   const exercisesDocs = await _exerciseModel.foundExercise();
-  while (exercisesDocs.length > 6) {
+  while (exercisesDocs.length > 8) {
     let randomIndex = Math.floor(Math.random() * exercisesDocs.length);
     exercisesDocs.splice(randomIndex, 1);
   }

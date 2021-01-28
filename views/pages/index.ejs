@@ -14,49 +14,46 @@
     </script>
     <link rel="stylesheet" href="/scss/master.css">
 
-    <script>
-        function showPlan() {
-            var item = document.getElementsByClassName("cards");
-            var amount = document.getElementsByClassName("cards").length;
-            for (let i = 0; i <= amount; i++) {
-                item[i].style.visibility = "visible";
 
-            }
-
-        }
-
-        function generatePlan() {
-
-        }
-
-        function showPlan() {
-
-        }
-    </script>
 </head>
 
 
 <body>
 
 
-    <nav id="header" class="navbar navbar-expand-lg navbar-light bg-light">
-        <div id="header-body" class="container-fluid">
-            <a class="logo navbar-brand" href="#">
+    <!--Navbar/Header Begins-->
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark  bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand d-flex flex-row align-items-center" href="#">
+                <div id="logo"></div>
+                
             </a>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#"><b>New Plan</b></a>
-                        <a class="nav-link active" aria-current="page" href="#"><b>References</b></a>
-                    </li>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbarCollapse" style="">
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item active">
+                  <a class="nav-link" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">References</a>
+                </li>
+              </ul>
             </div>
-        </div>
-    </nav>
+          </div>
+        </nav>
+      </header>
 
 
+
+
+    <!--Carousel Begins-->
     <div id="carousel-slides" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div id="carousel-cover">
-            
+
         </div>
         <div id="intro-container">
             <div id="introCard" class="card" style="width: 18rem;">
@@ -115,41 +112,107 @@
         </div>
     </div>
 
+    <!-- Cards Start -->
 
-    <!-- Cards -->
-    <div class="cardContainer">
+    <div class="album py-5 bg-light">
+        <div class="container">
 
-        <% for( let i = 0; i < exercises.length; i++ ) { %>
-        <div class="cards-body card" style="width: 18rem;">
-            <div class="card-body">
-                <h3 class="card-title"><%= exercises[i].exerciseName %></h3>
-                <h6 class="card-subtitle mb-2 text-muted"> <%= exercises[i].area %></h6>
-                <hr>
-                <ul>
-                    <li><b>Strenght:</b> <%= exercises[i].strenghtSets %> sets; <%= exercises[i].strenghtReps %> amount
-                        of
-                        repetitions</li>
-                    <li><b>Growth:</b> <%= exercises[i].growthSets %> sets; <%= exercises[i].growthReps %> amount of
-                        repetitions
-                    </li>
-                    <li><b>Endurance:</b> <%= exercises[i].enduranceSets %> sets; <%= exercises[i].enduranceReps %>
-                        amount of
-                        repetitions</li>
-                </ul>
-                <p class="note card-subtitle mb-2 text-muted">* Note that it is just a suggestions of reps and sets.
-                    More information can be found at the
-                    References page.</p>
+            <div
+                class="d-flex justify-content-center justify-content-around row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+                <% for( let i = 0; i < exercises.length; i++ ) { %>
+                <div class="cards-body card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h3 class="card-title fs-4"><%= exercises[i].exerciseName %></h3>
+                        <h6 class="card-subtitle mb-2 text-muted"> <%= exercises[i].area %></h6>
+                        <hr>
+                        <ul>
+                            <li><b>Strenght:</b> <%= exercises[i].strenghtSets %> sets; <%= exercises[i].strenghtReps %>
+                                amount
+                                of
+                                repetitions</li>
+                            <li><b>Growth:</b> <%= exercises[i].growthSets %> sets; <%= exercises[i].growthReps %>
+                                amount of
+                                repetitions
+                            </li>
+                            <li><b>Endurance:</b> <%= exercises[i].enduranceSets %> sets;
+                                <%= exercises[i].enduranceReps %>
+                                amount of
+                                repetitions</li>
+                        </ul>
+                        <p class="note card-subtitle mb-2 text-muted">* Note that it is just a suggestions of reps and
+                            sets.
+                            More information can be found at the
+                            References page.</p>
+                    </div>
+                </div>
+                <% } %>
+
             </div>
         </div>
-        <% } %>
-
     </div>
+
     <!-- Cards ending -->
-    <div class="footer">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius est, sequi voluptate sed, amet quas
-        ratione at culpa esse suscipit illum sint eum veritatis incidunt. Accusamus dolores ea quaerat laborum.
-    </div>
 
+
+
+    <!-- Footer Begins -->
+
+    <footer class="container py-5">
+        <div class="row">
+            <div class="col-12 col-md">
+                <img src="/resources/images/KettlebellIcon2.png" width="55" height="55" fill="none" stroke="currentColor"
+                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img"
+                    viewBox="0 0 24 24">
+                <title>Product</title>
+                <circle cx="12" cy="12" r="10"></circle>
+                <path
+                    d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94">
+                </path></img>
+                <small class="d-block mb-3 text-muted">©2021-</small>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Features</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="link-secondary" href="#">Cool stuff</a></li>
+                    <li><a class="link-secondary" href="#">Random feature</a></li>
+                    <li><a class="link-secondary" href="#">Team feature</a></li>
+                    <li><a class="link-secondary" href="#">Stuff for developers</a></li>
+                    <li><a class="link-secondary" href="#">Another one</a></li>
+                    <li><a class="link-secondary" href="#">Last time</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Resources</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="link-secondary" href="#">Resource name</a></li>
+                    <li><a class="link-secondary" href="#">Resource</a></li>
+                    <li><a class="link-secondary" href="#">Another resource</a></li>
+                    <li><a class="link-secondary" href="#">Final resource</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Resources</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="link-secondary" href="#">Business</a></li>
+                    <li><a class="link-secondary" href="#">Education</a></li>
+                    <li><a class="link-secondary" href="#">Government</a></li>
+                    <li><a class="link-secondary" href="#">Gaming</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>About</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="link-secondary" href="#">Team</a></li>
+                    <li><a class="link-secondary" href="#">Locations</a></li>
+                    <li><a class="link-secondary" href="#">Privacy</a></li>
+                    <li><a class="link-secondary" href="#">Terms</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Footer Ends -->
 
 </body>
 

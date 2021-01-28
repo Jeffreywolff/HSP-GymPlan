@@ -3,7 +3,7 @@
 
 
 
-body{
+body {
     background-color: #F0F2EF;
     color: #000;
     margin: none;
@@ -11,60 +11,42 @@ body{
     border: 0;
 }
 
+//Header/Navbar Begins//
 
-.logo{
-    width: 10%;
-    
-    @include ImgProp(url(/resources/images/GA-logo.png), center, no-repeat, cover)
-}
-.logo:hover{
-    cursor: pointer; 
- }
-
-#header{
-   
-    #header-body{
-        @include flexProp(center, center);
-        justify-content: space-around;
-        width: 60%;
-            .nav-item{
-                display: flex;
-                flex-flow: row;
-            }
-    }
-
-    a{
-        text-decoration: none;
-        color: #000;
-    }
-
-    a:visited{
-        color: #000;
-    }
-
-    a:hover{
-        color: #28AFB0;
-    }
+#logo {
+    width: 110px;
+    height: 70px;
+    background-image: url(/resources/images/GYA-Logo_White1.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 
-#carousel-slides{
+
+
+
+//Header/Navbar CSS ends//
+
+
+
+// Carousel CSS begins//
+
+#carousel-slides {
     width: 100vw;
-    
 
-    #carousel-cover{
+
+    #carousel-cover {
         width: inherit;
-        height: 60vh;
+        height: $CarouselHeight;
         background-color: rgb(32, 32, 32);
         opacity: 0.4;
         z-index: 2;
         position: absolute;
-        
-        
-        
+
     }
 
-    #intro-container{
+    #intro-container {
         @include flexProp(center, center);
         z-index: 3;
         width: inherit;
@@ -72,18 +54,17 @@ body{
         position: absolute;
     }
 
-    #introCard{
-        
-        
-        
+    #introCard {
+
         color: #000;
-        #introCard-body{
+
+        #introCard-body {
             @include flexProp(center, center);
             flex-flow: column;
             background-color: #F0F2EF;
         }
 
-        #icon-container{
+        #icon-container {
             display: flex;
             flex-flow: row;
             justify-content: space-between;
@@ -92,7 +73,7 @@ body{
     }
 
 
-    #generatorBtn{
+    #generatorBtn {
         display: flex;
         background-color: #df7e00;
         @include textProp(normal, #e1e1e1, bold, center);
@@ -102,23 +83,23 @@ body{
         align-items: center;
     }
 
-    #generatorBtn:active{
+    #generatorBtn:active {
         transform: translateY(4px);
     }
 
-    #generatorBtn:hover{
+    #generatorBtn:hover {
         color: #fff;
         background-color: #881600;
     }
-    
-    #carousel-body{
+
+    #carousel-body {
         width: 100vw;
-        
+
     }
 
-    #carousel-img{
-        
-        height: 60vh;
+    #carousel-img {
+
+        height: $CarouselHeight;
         background-image: url(/resources/images/Legend_Fitness_HappyMembers.jpg);
         background-repeat: no-repeat;
         background-position: center;
@@ -126,59 +107,44 @@ body{
 
     }
 
-    #carousel-img2{
-        height: 60vh;
-        @include ImgProp(url(/resources/images/MintGym.jpg), center, no-repeat, cover);
+    #carousel-img2 {
+        height: $CarouselHeight;
+        @include ImgProp(url(/resources/images/Militarypressgirl1.jpg), center, no-repeat, cover);
+        //<span>Photo by <a href="https://unsplash.com/@johnarano?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">John Arano</a> on <a href="https://unsplash.com/s/photos/gym?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
     }
-    #carousel-img3{
-        height: 60vh;
-        @include ImgProp(url(/resources/images/WomanInGym.jpg), center, no-repeat, cover);
+
+    #carousel-img3 {
+        height: $CarouselHeight;
+        @include ImgProp(url(/resources/images/Squatgirl.jpg), center, no-repeat, cover);
+        // <span>Photo by <a href="https://unsplash.com/@johnfo?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">John Fornander</a> on <a href="https://unsplash.com/s/photos/gym?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
     }
 }
 
 
 
-
-.cardContainer{
-    @include flexProp(center, center);
-    flex-flow: row wrap;
-    justify-content: space-around;
-    width: 100%;
-    height: 100vh;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-    background-color: #F0F2EF;
-    
-}
-
-.cards-body{
+.cards-body {
     height: auto;
     box-shadow: 0 0 5px grey;
-    
 
-    h3,p{
+
+    h3 {
+        font-size: 110%;
+    }
+
+    p {
         width: auto;
         height: auto;
         margin: 10px;
     }
-    ul{
+
+    ul {
         margin-left: -10px;
     }
-    
+
 }
 
 
 
-.note{
+.note {
     font-size: 12px;
-}
-
-
-
-
-
-.footer{
-    width: 100%;
-    height: 20vh;
-    background-color: #28AFB0;
 }
