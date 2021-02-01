@@ -26,6 +26,7 @@ body {
 
 
 
+
 //Header/Navbar CSS ends//
 
 
@@ -52,22 +53,18 @@ body {
         width: inherit;
         height: 60vh;
         position: absolute;
+        
     }
 
     #introCard {
-
-        color: #000;
-
+        
+        color: #fff;
+        border: 2px solid #212529;
+        opacity: 0.9;
         #introCard-body {
             @include flexProp(center, center);
             flex-flow: column;
-            background-color: #F0F2EF;
-        }
-
-        #icon-container {
-            display: flex;
-            flex-flow: row;
-            justify-content: space-between;
+            background-color: #212529;
         }
 
     }
@@ -100,17 +97,15 @@ body {
     #carousel-img {
 
         height: $CarouselHeight;
-        background-image: url(/resources/images/Legend_Fitness_HappyMembers.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
+        @include ImgProp(url(/resources/images/Militarypressgirl1.jpg), center, no-repeat, cover);
+        //<span>Photo by <a href="https://unsplash.com/@johnarano?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">John Arano</a> on <a href="https://unsplash.com/s/photos/gym?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 
     }
 
     #carousel-img2 {
         height: $CarouselHeight;
-        @include ImgProp(url(/resources/images/Militarypressgirl1.jpg), center, no-repeat, cover);
-        //<span>Photo by <a href="https://unsplash.com/@johnarano?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">John Arano</a> on <a href="https://unsplash.com/s/photos/gym?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+        @include ImgProp(url(/resources/images/pushupman.jpg), center, no-repeat, cover);
+        // <span>Photo by <a href="https://unsplash.com/@karsten116?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Karsten Winegeart</a> on <a href="https://unsplash.com/s/photos/pushups?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
     }
 
     #carousel-img3 {

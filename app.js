@@ -25,15 +25,15 @@ app.post('/postexercise', async (req, res) => {
   res.render('pages/forms.ejs');
 })
 
-app.get('/getexercises', async (reg, res) => {
+app.get('/getexercises', async (req, res) => {
   const exercisesDocs = await _exerciseModel.foundExercise();
   while (exercisesDocs.length > 8) {
     let randomIndex = Math.floor(Math.random() * exercisesDocs.length);
     exercisesDocs.splice(randomIndex, 1);
   }
 
-
   console.log("GeneratePlanBtn was clicked!")
+
 
 
   res.render('pages/index.ejs', {
@@ -42,10 +42,11 @@ app.get('/getexercises', async (reg, res) => {
 })
 
 
-app.get('/', (reg, res) => res.render('pages/index.ejs', {
-  exercises: []
-}));
+app.get('/', (req, res) => {
 
-app.get('/postexercise', (reg, res) => res.render('pages/forms.ejs', {}));
+  res.render('pages/index.ejs', {exercises: []})
+});
+
+app.get('/postexercise', (req, res) => res.render('pages/forms.ejs', {}));
 
 app.listen(port, () => console.log(`\x1b[36m \n \nServer ip: http://localhost:${port} `));

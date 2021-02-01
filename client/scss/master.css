@@ -45,7 +45,9 @@ body {
 }
 
 #carousel-slides #introCard {
-  color: #000;
+  color: #fff;
+  border: 2px solid #212529;
+  opacity: 0.9;
 }
 
 #carousel-slides #introCard #introCard-body {
@@ -62,20 +64,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
-  background-color: #F0F2EF;
-}
-
-#carousel-slides #introCard #icon-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row;
-          flex-flow: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  background-color: #212529;
 }
 
 #carousel-slides #generatorBtn {
@@ -113,15 +102,15 @@ body {
 
 #carousel-slides #carousel-img {
   height: 70vh;
-  background-image: url(/resources/images/Legend_Fitness_HappyMembers.jpg);
-  background-repeat: no-repeat;
+  background-image: url(/resources/images/Militarypressgirl1.jpg);
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #carousel-slides #carousel-img2 {
   height: 70vh;
-  background-image: url(/resources/images/Militarypressgirl1.jpg);
+  background-image: url(/resources/images/pushupman.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
