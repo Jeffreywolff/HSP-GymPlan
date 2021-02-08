@@ -26,10 +26,54 @@ app.post('/postexercise', async (req, res) => {
 })
 
 app.get('/getexercises', async (req, res) => {
-  const exercisesDocs = await _exerciseModel.foundExercise();
-  while (exercisesDocs.length > 8) {
-    let randomIndex = Math.floor(Math.random() * exercisesDocs.length);
-    exercisesDocs.splice(randomIndex, 1);
+
+  // Get necessary Arrays
+  //const areaOfExercise = ['Back', 'Biceps', 'Triceps', 'Chest', 'Shoulders', 'Quads', 'Gluteus', 'Calves', 'Abs'];
+  const areaOfExercise = ['Back', 'Biceps'];
+  const exercisesDocs = await _exerciseModel.foundExercise(); 
+  const exercises = [];
+  const firstAreaExercises = [];
+  const secondAreaExercises = [];
+
+  let randomAreaIndex = Math.floor(Math.random() * areaOfExercise.length);
+  // Selecting type of exercise by randomizing index.
+  let firstTypeOfExercise = areaOfExercise[randomAreaIndex];
+  areaOfExercise.splice(randomAreaIndex, 1);
+  randomAreaIndex = Math.floor(Math.random() * areaOfExercise.length);
+  let secondTypeOfExercise = areaOfExercise[randomAreaIndex];
+  
+  for (let i = 0; i < exercisesDocs.length; i++) {
+    if (exercisesDocs[i].area == firstTypeOfExercise) {
+      firstAreaExercises.push(exercisesDocs[i]);
+    }
+    else if (exercisesDocs[i].area == secondTypeOfExercise) {
+      secondAreaExercises.push(exercisesDocs[i]);
+    }
+  }
+
+  let firstAreaCount = 0;
+  let secondAreaCount = 0;
+
+  while (true) {
+
+     if (firstAreaCount != 4) {
+      let randomIndex = Math.floor(Math.random() * firstAreaExercises.length);
+      exercises.push(firstAreaExercises[randomIndex]);
+      firstAreaExercises.splice(randomIndex, 1);
+      firstAreaCount++;
+     }
+
+     else if (secondAreaCount != 4) {
+      let randomIndex = Math.floor(Math.random() * secondAreaExercises.length);
+      exercises.push(secondAreaExercises[randomIndex]);
+      secondAreaExercises.splice(randomIndex, 1);
+      secondAreaCount++;
+     }   
+
+     else{
+      break;
+    } 
+
   }
 
   console.log("GeneratePlanBtn was clicked!")
@@ -37,7 +81,7 @@ app.get('/getexercises', async (req, res) => {
 
 
   res.render('pages/index.ejs', {
-    exercises: exercisesDocs
+    exercises: exercises
   });
 })
 
@@ -45,6 +89,11 @@ app.get('/getexercises', async (req, res) => {
 app.get('/', (req, res) => {
 
   res.render('pages/index.ejs', {exercises: []})
+});
+
+app.get('/faq', (req, res) => {
+
+  res.render('pages/faq.ejs')
 });
 
 app.get('/postexercise', (req, res) => res.render('pages/forms.ejs', {}));
