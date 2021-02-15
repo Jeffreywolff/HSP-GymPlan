@@ -29,7 +29,8 @@ app.get('/getexercises', async (req, res) => {
 
   // Get necessary Arrays
   //const areaOfExercise = ['Back', 'Biceps', 'Triceps', 'Chest', 'Shoulders', 'Quads', 'Gluteus', 'Calves', 'Abs'];
-  const areaOfExercise = ['Back', 'Biceps'];
+  const areaOfExercise = ['Back', 'Biceps', 'Triceps', 'Chest', 'Shoulders'];
+  
   const exercisesDocs = await _exerciseModel.foundExercise(); 
   const exercises = [];
   const firstAreaExercises = [];
