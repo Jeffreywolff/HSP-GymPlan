@@ -11,8 +11,6 @@ db.once('open', function() {
   // we're connected!
 });
 
-
-
 exports.store = async (element) => {
     await element.save();
 }

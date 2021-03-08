@@ -9,8 +9,6 @@ const clientDir = __dirname + "\\client\\";
 
 app.set('view engine', 'ejs');
 
-//exports.dBAddress = 'mongodb://localhost/webshop';
-
 
 app.use(express.static(clientDir));
 app.use(express.json());
@@ -98,7 +96,7 @@ app.get('/getexercises', async (req, res) => {
 
 
 app.get('/', (req, res) => {
-
+  console.log("User connected")
   res.render('pages/index.ejs', {exercises: []})
 });
 
@@ -107,6 +105,6 @@ app.get('/faq', (req, res) => {
   res.render('pages/faq.ejs')
 });
 
-app.get('/postexercise', (req, res) => res.render('pages/forms.ejs', {}));
+//app.get('/postexercise', (req, res) => res.render('pages/forms.ejs', {}));
 
-app.listen(port, () => console.log(`\x1b[36m \n \nServer ip: http://localhost:${port} `));
+app.listen(port, () => console.log(`\x1b[36m \n \nServer ip: http://localhost:${port} or http://gymplan.tk`));
