@@ -125,7 +125,7 @@
 
             <div
                 class="d-flex justify-content-center justify-content-around row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-
+                
                 <% for( let i = 0; i < exercises.length; i++ ) { %>
                 <div class="cards-body card" style="width: 18rem;">
                     <div class="card-body">
@@ -133,16 +133,16 @@
                         <h6 class="card-subtitle mb-2 text-muted"> <%= exercises[i].area %></h6>
                         <hr>
                         <ul>
-                            <li><b>Strength:</b> <%= exercises[i].strenghtSets %> sets; <%= exercises[i].strenghtReps %>
+                            <li><b>Strength:</b> <%= exerciseQuantity[0] %> sets; <%= exerciseQuantity[1] %>
                                 amount
                                 of
                                 repetitions</li>
-                            <li><b>Growth:</b> <%= exercises[i].growthSets %> sets; <%= exercises[i].growthReps %>
+                            <li><b>Growth:</b> <%= exerciseQuantity[2] %> sets; <%= exerciseQuantity[3] %>
                                 amount of
                                 repetitions
                             </li>
-                            <li><b>Endurance:</b> <%= exercises[i].enduranceSets %> sets;
-                                <%= exercises[i].enduranceReps %>
+                            <li><b>Endurance:</b> <%= exerciseQuantity[4] %> sets;
+                                <%= exerciseQuantity[5] %>
                                 amount of
                                 repetitions</li>
                         </ul>

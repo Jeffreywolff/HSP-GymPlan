@@ -26,7 +26,7 @@ app.post('/postexercise', async (req, res) => {
 })
 
 app.get('/getexercises', async (req, res) => {
-
+  let exerciseQuantity = [];
   // Get necessary Arrays
   //const areaOfExercise = ['Back', 'Biceps', 'Triceps', 'Chest', 'Shoulders', 'Quads', 'Gluteus', 'Calves', 'Abs'];
   const areaOfExercise = ['Back', 'Biceps', 'Triceps', 'Chest', 'Shoulders'];
@@ -77,12 +77,22 @@ app.get('/getexercises', async (req, res) => {
 
   }
 
+  let strengthSets = Math.floor(Math.random() * 4)+1 ;
+  let strengthReps = Math.floor(Math.random() * 5)+1;
+  let growthSets = Math.floor(Math.random() * 5)+1;  
+  let growthReps = 5 + Math.floor(Math.random() * 6)+1;
+  let enduranceSets = Math.floor(Math.random() * 5)+1;
+  let enduranceReps = 11 + Math.floor(Math.random() * 10)+1
+  
+  exerciseQuantity.push(strengthSets, strengthReps, growthSets, growthReps, enduranceSets, enduranceReps);
+  console.log(exerciseQuantity)
   console.log("GeneratePlanBtn was clicked!")
 
 
 
   res.render('pages/index.ejs', {
-    exercises: exercises
+    exercises: exercises,
+    exerciseQuantity
   });
 })
 
