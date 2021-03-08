@@ -28,8 +28,8 @@ app.post('/postexercise', async (req, res) => {
 app.get('/getexercises', async (req, res) => {
   let exerciseQuantity = [];
   // Get necessary Arrays
-  //const areaOfExercise = ['Back', 'Biceps', 'Triceps', 'Chest', 'Shoulders', 'Quads', 'Gluteus', 'Calves', 'Abs'];
-  const areaOfExercise = ['Back', 'Biceps', 'Triceps', 'Chest', 'Shoulders'];
+
+  const areaOfExercise = ['Back', 'Biceps', 'Triceps', 'Chest', 'Shoulders', 'Quads', 'Gluteus', 'Calves', 'Abs'];
   
   const exercisesDocs = await _exerciseModel.foundExercise(); 
   const exercises = [];
