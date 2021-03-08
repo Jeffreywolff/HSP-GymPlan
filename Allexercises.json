@@ -1,0 +1,603 @@
+[{
+  "_id": {
+    "$oid": "600ffe29daefc04d483cd05a"
+  },
+  "area": "Quads",
+  "exerciseName": "Bulgarian Split Squat",
+  "strenghtSets": 4,
+  "strenghtReps": 6,
+  "growthSets": 5,
+  "growthReps": 10,
+  "enduranceSets": 5,
+  "enduranceReps": 20,
+  "difficulty": 1,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60128a5e61e9c15f80dd480c"
+  },
+  "area": "Back",
+  "exerciseName": "Deadlift",
+  "strenghtSets": 4,
+  "strenghtReps": 4,
+  "growthSets": 4,
+  "growthReps": 8,
+  "enduranceSets": 3,
+  "enduranceReps": 13,
+  "difficulty": 3,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60128ae061e9c15f80dd480d"
+  },
+  "area": "Back",
+  "exerciseName": "Lats pulldown",
+  "strenghtSets": 4,
+  "strenghtReps": 5,
+  "growthSets": 5,
+  "growthReps": 10,
+  "enduranceSets": 4,
+  "enduranceReps": 15,
+  "difficulty": 1,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60128bb661e9c15f80dd480e"
+  },
+  "area": "Back",
+  "exerciseName": "Dumbbell rows",
+  "strenghtSets": 3,
+  "strenghtReps": 5,
+  "growthSets": 6,
+  "growthReps": 8,
+  "enduranceSets": 7,
+  "enduranceReps": 12,
+  "difficulty": 1,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60128c4261e9c15f80dd480f"
+  },
+  "area": "Back",
+  "exerciseName": "Reverse fly",
+  "strenghtSets": 3,
+  "strenghtReps": 4,
+  "growthSets": 5,
+  "growthReps": 9,
+  "enduranceSets": 7,
+  "enduranceReps": 12,
+  "difficulty": 2,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60128e8c61e9c15f80dd4810"
+  },
+  "area": "Back",
+  "exerciseName": "Pull-ups",
+  "strenghtSets": 3,
+  "strenghtReps": 4,
+  "growthSets": 6,
+  "growthReps": 8,
+  "enduranceSets": 3,
+  "enduranceReps": 12,
+  "difficulty": 2,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60128eb761e9c15f80dd4811"
+  },
+  "area": "Biceps",
+  "exerciseName": "Hammer Curls",
+  "strenghtSets": 3,
+  "strenghtReps": 5,
+  "growthSets": 6,
+  "growthReps": 10,
+  "enduranceSets": 5,
+  "enduranceReps": 15,
+  "difficulty": 1,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "601290db61e9c15f80dd4812"
+  },
+  "area": "Biceps",
+  "exerciseName": "Incline Dumbbell Curl",
+  "strenghtSets": 3,
+  "strenghtReps": 6,
+  "growthSets": 5,
+  "growthReps": 9,
+  "enduranceSets": 7,
+  "enduranceReps": 15,
+  "difficulty": 1,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "601eaff562344e44b831e208"
+  },
+  "area": "Biceps",
+  "exerciseName": "Barbell Curl",
+  "strenghtSets": 3,
+  "strenghtReps": 5,
+  "growthSets": 4,
+  "growthReps": 8,
+  "enduranceSets": 7,
+  "enduranceReps": 15,
+  "difficulty": 1,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "601eb07062344e44b831e209"
+  },
+  "area": "Biceps",
+  "exerciseName": "Reverse Barbell Curl",
+  "strenghtSets": 2,
+  "strenghtReps": 5,
+  "growthSets": 5,
+  "growthReps": 8,
+  "enduranceSets": 6,
+  "enduranceReps": 12,
+  "difficulty": 1,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "602138c3aba64b1550cb7605"
+  },
+  "area": "Biceps",
+  "exerciseName": "Standing Cable Curl",
+  "strenghtSets": 3,
+  "strenghtReps": 5,
+  "growthSets": 5,
+  "growthReps": 8,
+  "enduranceSets": 6,
+  "enduranceReps": 12,
+  "difficulty": 1,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60213906aba64b1550cb7606"
+  },
+  "area": "Biceps",
+  "exerciseName": "Zottman Curl",
+  "strenghtSets": 3,
+  "strenghtReps": 4,
+  "growthSets": 4,
+  "growthReps": 8,
+  "enduranceSets": 6,
+  "enduranceReps": 15,
+  "difficulty": 2,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60213948aba64b1550cb7607"
+  },
+  "area": "Biceps",
+  "exerciseName": "Preacher Curl",
+  "strenghtSets": 3,
+  "strenghtReps": 6,
+  "growthSets": 6,
+  "growthReps": 9,
+  "enduranceSets": 7,
+  "enduranceReps": 12,
+  "difficulty": 2,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6021398baba64b1550cb7608"
+  },
+  "area": "Biceps",
+  "exerciseName": "Concentration Curl",
+  "strenghtSets": 3,
+  "strenghtReps": 5,
+  "growthSets": 6,
+  "growthReps": 8,
+  "enduranceSets": 6,
+  "enduranceReps": 14,
+  "difficulty": 3,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "602139c8aba64b1550cb7609"
+  },
+  "area": "Biceps",
+  "exerciseName": "Cable Flex Curl",
+  "strenghtSets": 2,
+  "strenghtReps": 6,
+  "growthSets": 6,
+  "growthReps": 10,
+  "enduranceSets": 7,
+  "enduranceReps": 12,
+  "difficulty": 3,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60213b40aba64b1550cb760a"
+  },
+  "area": "Biceps",
+  "exerciseName": "Pull-ups",
+  "strenghtSets": 3,
+  "strenghtReps": 4,
+  "growthSets": 5,
+  "growthReps": 8,
+  "enduranceSets": 6,
+  "enduranceReps": 18,
+  "difficulty": 2,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60213ccaaba64b1550cb760b"
+  },
+  "area": "Triceps",
+  "exerciseName": "Push-ups",
+  "strenghtSets": 3,
+  "strenghtReps": 6,
+  "growthSets": 6,
+  "growthReps": 12,
+  "enduranceSets": 5,
+  "enduranceReps": 20,
+  "difficulty": 2,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60213d14aba64b1550cb760c"
+  },
+  "area": "Triceps",
+  "exerciseName": "Close-Grip Bench Press",
+  "strenghtSets": 3,
+  "strenghtReps": 5,
+  "growthSets": 6,
+  "growthReps": 10,
+  "enduranceSets": 6,
+  "enduranceReps": 15,
+  "difficulty": 2,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60213d9daba64b1550cb760d"
+  },
+  "area": "Triceps",
+  "exerciseName": "Cable Rope Pushdown",
+  "strenghtSets": 3,
+  "strenghtReps": 6,
+  "growthSets": 4,
+  "growthReps": 10,
+  "enduranceSets": 4,
+  "enduranceReps": 15,
+  "difficulty": 1,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60213de9aba64b1550cb760e"
+  },
+  "area": "Triceps",
+  "exerciseName": "Skull Crushers",
+  "strenghtSets": 3,
+  "strenghtReps": 4,
+  "growthSets": 5,
+  "growthReps": 8,
+  "enduranceSets": 5,
+  "enduranceReps": 15,
+  "difficulty": 2,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60213e0baba64b1550cb760f"
+  },
+  "area": "Triceps",
+  "exerciseName": "Tricep Dips",
+  "strenghtSets": 3,
+  "strenghtReps": 6,
+  "growthSets": 6,
+  "growthReps": 12,
+  "enduranceSets": 5,
+  "enduranceReps": 18,
+  "difficulty": 1,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60213ec9aba64b1550cb7610"
+  },
+  "area": "Triceps",
+  "exerciseName": "Diamond Push-Ups",
+  "strenghtSets": 3,
+  "strenghtReps": 5,
+  "growthSets": 6,
+  "growthReps": 8,
+  "enduranceSets": 5,
+  "enduranceReps": 15,
+  "difficulty": 3,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60214178af236b3bdcf88453"
+  },
+  "area": "Triceps",
+  "exerciseName": "Bench Dip",
+  "strenghtSets": 3,
+  "strenghtReps": 6,
+  "growthSets": 5,
+  "growthReps": 10,
+  "enduranceSets": 4,
+  "enduranceReps": 18,
+  "difficulty": 1,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "602141b8af236b3bdcf88454"
+  },
+  "area": "Triceps",
+  "exerciseName": "Overhead Extension",
+  "strenghtSets": 3,
+  "strenghtReps": 5,
+  "growthSets": 5,
+  "growthReps": 10,
+  "enduranceSets": 6,
+  "enduranceReps": 15,
+  "difficulty": 1,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "602141d7af236b3bdcf88455"
+  },
+  "area": "Triceps",
+  "exerciseName": "Dumbbell Chest Press",
+  "strenghtSets": 3,
+  "strenghtReps": 4,
+  "growthSets": 6,
+  "growthReps": 8,
+  "enduranceSets": 5,
+  "enduranceReps": 16,
+  "difficulty": 2,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60214205af236b3bdcf88456"
+  },
+  "area": "Triceps",
+  "exerciseName": "Incline Dumbbell Chest Press",
+  "strenghtSets": 3,
+  "strenghtReps": 4,
+  "growthSets": 5,
+  "growthReps": 8,
+  "enduranceSets": 4,
+  "enduranceReps": 12,
+  "difficulty": 1,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "602144b3af236b3bdcf88457"
+  },
+  "area": "Chest",
+  "exerciseName": "Barbell Bench Press",
+  "strenghtSets": 3,
+  "strenghtReps": 5,
+  "growthSets": 5,
+  "growthReps": 10,
+  "enduranceSets": 4,
+  "enduranceReps": 15,
+  "difficulty": 2,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60214562af236b3bdcf88458"
+  },
+  "area": "Chest",
+  "exerciseName": "Dumbbell Fly",
+  "strenghtSets": 3,
+  "strenghtReps": 4,
+  "growthSets": 4,
+  "growthReps": 6,
+  "enduranceSets": 5,
+  "enduranceReps": 15,
+  "difficulty": 1,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6021458eaf236b3bdcf88459"
+  },
+  "area": "Chest",
+  "exerciseName": "Machine Chest Press",
+  "strenghtSets": 2,
+  "strenghtReps": 4,
+  "growthSets": 4,
+  "growthReps": 10,
+  "enduranceSets": 4,
+  "enduranceReps": 15,
+  "difficulty": 1,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60214b3e662a283478b6e59d"
+  },
+  "area": "Chest",
+  "exerciseName": "Incline Dumbbell Press",
+  "strenghtSets": 3,
+  "strenghtReps": 4,
+  "growthSets": 4,
+  "growthReps": 10,
+  "enduranceSets": 5,
+  "enduranceReps": 12,
+  "difficulty": 2,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "602abc26d1f9bf0700638d27"
+  },
+  "area": "Chest",
+  "exerciseName": "Flat Dumbbell Press",
+  "strenghtSets": 3,
+  "strenghtReps": 5,
+  "growthSets": 4,
+  "growthReps": 8,
+  "enduranceSets": 6,
+  "enduranceReps": 15,
+  "difficulty": 1,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "602abcdfd1f9bf0700638d28"
+  },
+  "area": "Chest",
+  "exerciseName": "Incline Bench Press",
+  "strenghtSets": 3,
+  "strenghtReps": 4,
+  "growthSets": 4,
+  "growthReps": 12,
+  "enduranceSets": 4,
+  "enduranceReps": 16,
+  "difficulty": 2,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "602abdb8d1f9bf0700638d29"
+  },
+  "area": "Chest",
+  "exerciseName": "Incline Cable Fly",
+  "strenghtSets": 2,
+  "strenghtReps": 5,
+  "growthSets": 4,
+  "growthReps": 10,
+  "enduranceSets": 5,
+  "enduranceReps": 13,
+  "difficulty": 2,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "602abe54d1f9bf0700638d2a"
+  },
+  "area": "Chest",
+  "exerciseName": "Bent-over cable crossover",
+  "strenghtSets": 3,
+  "strenghtReps": 6,
+  "growthSets": 4,
+  "growthReps": 9,
+  "enduranceSets": 4,
+  "enduranceReps": 14,
+  "difficulty": 1,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "602abefad1f9bf0700638d2b"
+  },
+  "area": "Chest",
+  "exerciseName": "Wide Decline Push-ups",
+  "strenghtSets": 3,
+  "strenghtReps": 5,
+  "growthSets": 4,
+  "growthReps": 10,
+  "enduranceSets": 6,
+  "enduranceReps": 12,
+  "difficulty": 1,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "602abf38d1f9bf0700638d2c"
+  },
+  "area": "Chest",
+  "exerciseName": "Chest Dips",
+  "strenghtSets": 3,
+  "strenghtReps": 6,
+  "growthSets": 4,
+  "growthReps": 8,
+  "enduranceSets": 4,
+  "enduranceReps": 15,
+  "difficulty": 2,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "602abfddd1f9bf0700638d2d"
+  },
+  "area": "Shoulders",
+  "exerciseName": "Barbell Shoulder Press",
+  "strenghtSets": 3,
+  "strenghtReps": 4,
+  "growthSets": 4,
+  "growthReps": 8,
+  "enduranceSets": 3,
+  "enduranceReps": 12,
+  "difficulty": 2,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "602ac011d1f9bf0700638d2e"
+  },
+  "area": "Shoulders",
+  "exerciseName": "Dumbbell Shoulder Press",
+  "strenghtSets": 2,
+  "strenghtReps": 5,
+  "growthSets": 4,
+  "growthReps": 8,
+  "enduranceSets": 4,
+  "enduranceReps": 13,
+  "difficulty": 2,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "602ac071d1f9bf0700638d2f"
+  },
+  "area": "Shoulders",
+  "exerciseName": "Front Raise",
+  "strenghtSets": 4,
+  "strenghtReps": 5,
+  "growthSets": 5,
+  "growthReps": 6,
+  "enduranceSets": 4,
+  "enduranceReps": 12,
+  "difficulty": 1,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "602ac0a0d1f9bf0700638d30"
+  },
+  "area": "Shoulders",
+  "exerciseName": "Reverse Pec Deck Fly",
+  "strenghtSets": 3,
+  "strenghtReps": 5,
+  "growthSets": 4,
+  "growthReps": 8,
+  "enduranceSets": 4,
+  "enduranceReps": 12,
+  "difficulty": 2,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "602ba656eb3eee3aacf8a29d"
+  },
+  "area": "Back",
+  "exerciseName": "Wide dumbbell row",
+  "strenghtSets": 2,
+  "strenghtReps": 3,
+  "growthSets": 3,
+  "growthReps": 12,
+  "enduranceSets": 5,
+  "enduranceReps": 12,
+  "difficulty": 1,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "602ba79ceb3eee3aacf8a29e"
+  },
+  "area": "Back",
+  "exerciseName": "Chin-ups",
+  "strenghtSets": 4,
+  "strenghtReps": 6,
+  "growthSets": 5,
+  "growthReps": 10,
+  "enduranceSets": 5,
+  "enduranceReps": 15,
+  "difficulty": 3,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "602ba7daeb3eee3aacf8a29f"
+  },
+  "area": "Back",
+  "exerciseName": "Cable Row",
+  "strenghtSets": 2,
+  "strenghtReps": 5,
+  "growthSets": 4,
+  "growthReps": 10,
+  "enduranceSets": 5,
+  "enduranceReps": 12,
+  "difficulty": 2,
+  "__v": 0
+}]
