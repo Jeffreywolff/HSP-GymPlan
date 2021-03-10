@@ -256,4 +256,263 @@
   },
   "area": "Back",
   "exerciseName": "Cable Row"
+},{
+  "_id": {
+    "$oid": "60461a6d63dd8d33b0b35392"
+  },
+  "area": "Shoulders",
+  "exerciseName": "90° Dumbbell Lateral Raise",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60461a8f63dd8d33b0b35393"
+  },
+  "area": "Shoulders",
+  "exerciseName": "Dumbbell Lateral Raise",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60461a9e63dd8d33b0b35394"
+  },
+  "area": "Shoulders",
+  "exerciseName": "Cable Forehead pull",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60461aa863dd8d33b0b35395"
+  },
+  "area": "Shoulders",
+  "exerciseName": "Barbell High pull",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60461ab963dd8d33b0b35396"
+  },
+  "area": "Shoulders",
+  "exerciseName": "Decline Push-ups",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60461f7663dd8d33b0b35397"
+  },
+  "area": "Quads",
+  "exerciseName": "BOSU Ball Squat",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60461f8263dd8d33b0b35398"
+  },
+  "area": "Quads",
+  "exerciseName": "Bodyweight Squat",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60461f8b63dd8d33b0b35399"
+  },
+  "area": "Quads",
+  "exerciseName": "Barbell Front Squat",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60461f9363dd8d33b0b3539a"
+  },
+  "area": "Quads",
+  "exerciseName": "Goblet Squat",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60461f9b63dd8d33b0b3539b"
+  },
+  "area": "Quads",
+  "exerciseName": "Barbell Box Squat",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60461fa563dd8d33b0b3539c"
+  },
+  "area": "Quads",
+  "exerciseName": "Piston Squat",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60461fb763dd8d33b0b3539d"
+  },
+  "area": "Gluteus",
+  "exerciseName": "Landmine Squat Press",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60461fc563dd8d33b0b3539e"
+  },
+  "area": "Gluteus",
+  "exerciseName": "Back Squat",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60461fce63dd8d33b0b3539f"
+  },
+  "area": "Gluteus",
+  "exerciseName": "Lateral Pistol Squats",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60461fd763dd8d33b0b353a0"
+  },
+  "area": "Gluteus",
+  "exerciseName": "Sumo Squat",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60461fdf63dd8d33b0b353a1"
+  },
+  "area": "Gluteus",
+  "exerciseName": "Squat Jump Tap",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60461fe863dd8d33b0b353a2"
+  },
+  "area": "Gluteus",
+  "exerciseName": "Tricep Extension Squat",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60461fef63dd8d33b0b353a3"
+  },
+  "area": "Gluteus",
+  "exerciseName": "Pencil Squat",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60461fff63dd8d33b0b353a4"
+  },
+  "area": "Gluteus",
+  "exerciseName": "Deep Squat with Heel Raise",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6046200963dd8d33b0b353a5"
+  },
+  "area": "Gluteus",
+  "exerciseName": "Curtsy Lunge",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6046202563dd8d33b0b353a6"
+  },
+  "area": "Calves",
+  "exerciseName": "Barbell Calf Raise",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6046203763dd8d33b0b353a7"
+  },
+  "area": "Calves",
+  "exerciseName": "Dumbbell Calf Raise",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6046203f63dd8d33b0b353a8"
+  },
+  "area": "Calves",
+  "exerciseName": "Seated Calf Raise",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6046204763dd8d33b0b353a9"
+  },
+  "area": "Calves",
+  "exerciseName": "Tiptoe Farmer’s Walk",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6046204f63dd8d33b0b353aa"
+  },
+  "area": "Calves",
+  "exerciseName": "Single-Leg Calf Raise",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6046205f63dd8d33b0b353ab"
+  },
+  "area": "Abs",
+  "exerciseName": "Plank",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6046206863dd8d33b0b353ac"
+  },
+  "area": "Abs",
+  "exerciseName": "Mountain climber",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6046206e63dd8d33b0b353ad"
+  },
+  "area": "Abs",
+  "exerciseName": "Reverse crunch",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6046207663dd8d33b0b353ae"
+  },
+  "area": "Abs",
+  "exerciseName": "Russian twist",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6046207d63dd8d33b0b353af"
+  },
+  "area": "Abs",
+  "exerciseName": "Dead bug",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6046208763dd8d33b0b353b0"
+  },
+  "area": "Abs",
+  "exerciseName": "Leg raise",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6046208e63dd8d33b0b353b1"
+  },
+  "area": "Abs",
+  "exerciseName": "Abs roll-out",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6046209663dd8d33b0b353b2"
+  },
+  "area": "Abs",
+  "exerciseName": "Hanging knee raise",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6046209d63dd8d33b0b353b3"
+  },
+  "area": "Abs",
+  "exerciseName": "Medicine ball crunch",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "604620a563dd8d33b0b353b4"
+  },
+  "area": "Abs",
+  "exerciseName": "Flutter kicks",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "604620ae63dd8d33b0b353b5"
+  },
+  "area": "Abs",
+  "exerciseName": "L-sit",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "604620be63dd8d33b0b353b6"
+  },
+  "area": "Abs",
+  "exerciseName": "Bicycle Crunch",
+  "__v": 0
 }]

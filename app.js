@@ -8,6 +8,8 @@ const port = 3000;
 const clientDir = __dirname + "\\client\\";
 
 
+
+
 app.set('view engine', 'ejs');
 
 
@@ -29,7 +31,7 @@ app.get('/getexercises', async (req, res) => {
   // Get necessary Arrays
 
   const areaOfExercise = ['Back', 'Biceps', 'Triceps', 'Chest', 'Shoulders', 'Quads', 'Gluteus', 'Calves', 'Abs'];
-  
+  // Fetches all exercises from MongoDB.
   const exercisesDocs = await _exerciseModel.foundExercise(); 
   const exercises = [];
   const firstAreaExercises = [];
@@ -72,8 +74,7 @@ app.get('/getexercises', async (req, res) => {
 
      else{
       break;
-    } 
-
+    }
   }
 
   let strengthSets = Math.floor(Math.random() * 4)+1 ;
@@ -85,19 +86,20 @@ app.get('/getexercises', async (req, res) => {
   
   exerciseQuantity.push(strengthSets, strengthReps, growthSets, growthReps, enduranceSets, enduranceReps);
   console.log(exerciseQuantity)
-  console.log("GeneratePlanBtn was clicked!")
-
-
+  console.log("GenerateBtn was clicked!")
+  
 
   res.render('pages/index.ejs', {
     exercises: exercises,
     exerciseQuantity
+    
   });
 })
 
 
 app.get('/', (req, res) => {
-  console.log("User connected")
+  var date = new Date();
+  console.log("Remote connection established ; " + date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds())
   res.render('pages/index.ejs', {exercises: []})
 });
 
@@ -106,6 +108,7 @@ app.get('/faq', (req, res) => {
   res.render('pages/faq.ejs')
 });
 
+// Only for adding exercises
 //app.get('/postexercise', (req, res) => res.render('pages/forms.ejs', {}));
 
 app.listen(port, () => console.log(`\x1b[36m \n \nServer ip: http://localhost:${port} or http://gymplan.tk`));

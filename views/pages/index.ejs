@@ -101,6 +101,14 @@
                         will
                         be generated to fit your
                         needs in terms of training.</p><br>
+                        <script>
+
+                            function scrollDown(){
+                            window.scrollBy(0, window.innerHeight); // May need to be -1 to go down
+                        }
+
+                        </script>
+                        <!--ondrop="scrollDown()"-->
                     <a href="/getexercises" id="generatorBtn" class="btn btn-info" role="button">Generate Plan</a>
                 </div>
             </div>
@@ -123,7 +131,7 @@
 
     <!-- Cards Start -->
 
-    <div class="album py-5 bg-light">
+    <div id="mainContainer" class="album py-5 bg-light">
         <div class="container">
 
             <div
